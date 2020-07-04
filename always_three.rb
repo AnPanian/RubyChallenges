@@ -1,13 +1,7 @@
 puts "give me a number" 
 
-number1 = gets.to_i
+final_number = gets.to_i
 
-mid_number = number1 + 5
-mid_number = mid_number * 2
-mid_number = mid_number - 4
-mid_number = mid_number / 2
+puts 'Always ' + (((final_number + 5) * 2 - 4 )/ 2 - final_number).to_s
 
-final_number = mid_number - number1
-
-puts "Always #{final_number}"
 
