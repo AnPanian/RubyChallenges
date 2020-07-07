@@ -1,7 +1,11 @@
+def gets_birthday
 puts "Please enter your birthday. mmddyyyy"
+user_birthdate = gets
+end
 
-birthdate = gets
-
+def determine_number
+birthdate = gets_birthday
+    
 number = birthdate[0].to_i + birthdate[1].to_i + birthdate[2].to_i + birthdate[3].to_i + birthdate[4].to_i + birthdate[5].to_i + birthdate[6].to_i + birthdate[7].to_i
 
 number = number.to_s
@@ -11,7 +15,10 @@ if number > 9
     number = number.to_s
     number = number[1].to_i + number [2].to_i
 end
+end
 
+def numerology_message
+    number = determine_number
 case number
 when 1
     puts "Your numberology number is #{number}.\nOne is the leader.
@@ -52,3 +59,6 @@ when 9
 else
     puts "Uh oh! Your birth path number is not 1-9!"
 end
+end
+
+numerology_message
