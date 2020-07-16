@@ -15,6 +15,8 @@ if number > 9
     number = number.to_s
     number = number[1].to_i + number [2].to_i
 end
+
+return number
 end
 
 def numerology_message
